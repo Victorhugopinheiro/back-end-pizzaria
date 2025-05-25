@@ -24,7 +24,7 @@ class authUserService{
         }
 
         //comparando senha com a do banco de dados
-        const truePassword = compare(password, user.password)
+        const truePassword = await compare(password, user.password)
 
         if(!truePassword){
             throw new Error("User/password invalidos")

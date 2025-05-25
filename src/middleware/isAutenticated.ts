@@ -16,7 +16,7 @@ export function MiddlewareAuth(req:Request, res:Response, next:NextFunction){
 
     const [, token] = authToken.split(" ")
 
-    console.log(token)
+ 
 
    try{
 
